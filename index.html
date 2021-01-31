@@ -114,6 +114,15 @@
         font-weight: 500;
         border-radius: 7px;
         cursor: pointer;
+        transition: all 0.4s;
+      }
+
+      .round-button:hover {
+        box-shadow: 0 16px 31px -16px #2f55d4;
+        background: #294dc6;
+        border-color: #294dc6;
+        transform: translateY(-4px);
+        outline: none;
       }
 
       .icon {
@@ -141,9 +150,36 @@
         align-items: center;
         padding: 24px;
       }
+
+      .dot {
+        width: 6px;
+        height: 6px;
+        background-color: rgba(47, 85, 212, 0.2);
+        margin: 5px 7px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .dot:hover {
+        border: 2px solid #2f55d4;
+        background-color: white;
+      }
+
+      .logo {
+        max-height: 94px;
+        width: auto !important;
+        margin: 10px auto;
+        opacity: 0.6;
+        transition: all 0.5s;
+      }
+
+      .logo:hover {
+        opacity: 0.9;
+      }
     </style>
   </head>
-  <body style="margin-bottom: 500px">
+  <body>
     <div
       style="
         background-image: url(images/bg-1.png);
@@ -789,224 +825,889 @@
         </div>
       </div>
     </div>
-    <div
-      id="cs"
-      style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 50px;
-        background-color: chartreuse;
-      "
-    >
-      <div style="display: flex; flex-direction: column; align-items: center">
-        <p>TESTIMONIAL</p>
-        <p>What our Client Say</p>
-        <p>
-          It will be as simple as occidental in fact, it will be Occidental.
-        </p>
+    <div style="background-color: #f8fafe">
+      <div
+        id="cs"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 50px;
+          width: 70%;
+          margin: 0 auto;
+        "
+      >
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <p
+            style="
+              color: #2f55d4 !important;
+              font-weight: 700;
+              margin-bottom: 8px;
+            "
+          >
+            TESTIMONIAL
+          </p>
+          <p style="color: #343a40; font-weight: 700; margin-bottom: 16px">
+            What our Client Say
+          </p>
+          <p
+            style="
+              line-height: 1.8;
+              font-size: 15px;
+              margin-bottom: 1rem;
+              color: #a0a9b1;
+            "
+          >
+            It will be as simple as occidental in fact, it will be Occidental.
+          </p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 24px;
+          "
+        >
+          <div style="display: flex; align-items: flex-end">
+            <span
+              class="iconify"
+              data-icon="mdi-format-quote-open"
+              data-inline="false"
+              style="
+                width: 40px;
+                height: 48px;
+                color: #2f55d4;
+                margin-right: 4px;
+              "
+            ></span>
+            <p style="color: #343a40; font-weight: 700; font-size: 1.25rem">
+              3,500 + Satisfied Client
+            </p>
+          </div>
+          <div style="display: flex">
+            <div
+              style="
+                width: 32px;
+                height: 32px;
+                line-height: 27px;
+                background: rgba(47, 85, 212, 0.2);
+                color: #2f55d4;
+                border-radius: 50%;
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px;
+                cursor: pointer;
+              "
+            >
+              <span
+                class="iconify"
+                data-icon="mdi-chevron-left"
+                data-inline="false"
+                style="
+                  width: 40px;
+                  height: 48px;
+                  color: #2f55d4;
+                  width: 20px;
+                  height: 27px;
+                "
+              ></span>
+            </div>
+            <div
+              style="
+                width: 32px;
+                height: 32px;
+                line-height: 27px;
+                background: rgba(47, 85, 212, 0.2);
+                color: #2f55d4;
+                border-radius: 50%;
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px;
+                cursor: pointer;
+              "
+            >
+              <span
+                class="iconify"
+                data-icon="mdi-chevron-right"
+                data-inline="false"
+                style="
+                  width: 40px;
+                  height: 48px;
+                  color: #2f55d4;
+                  width: 20px;
+                  height: 27px;
+                "
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex">
+          <div
+            style="
+              display: flex;
+              padding: 1.5rem;
+              background-color: white;
+              border: none;
+              box-shadow: 0 8px 35px 0 rgb(73 80 87 / 5%);
+              border-radius: 7px;
+              margin-bottom: 30px;
+              margin-right: 20px;
+            "
+          >
+            <div style="display: flex; flex-direction: column">
+              <p
+                style="
+                  margin-bottom: 1.5rem;
+                  line-height: 1.8;
+                  font-size: 15px;
+                  color: #a0a9b1;
+                "
+              >
+                To achieve this, it would be necessary to have uniform grammar,
+                pronunciation and more common words. If several languages of the
+                resulting language
+              </p>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: flex-end;
+                "
+              >
+                <div style="display: flex">
+                  <div
+                    style="
+                      background-color: rgba(47, 85, 212, 0.1);
+                      height: 3.5rem;
+                      width: 3.5rem;
+                      border-radius: 50%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      color: #2f55d4;
+                      font-weight: 700;
+                      margin-right: 16px;
+                    "
+                  >
+                    T
+                  </div>
+                  <div style="display: flex; flex-direction: column">
+                    <p
+                      style="
+                        font-size: 16px;
+                        color: #343a40;
+                        font-weight: 700;
+                        margin-bottom: 0.5rem;
+                      "
+                    >
+                      Timothy Fairley
+                    </p>
+                    <p style="font-size: 0.9rem; color: #a0a9b1">
+                      - Invoza User
+                    </p>
+                  </div>
+                </div>
+                <div style="display: flex">
+                  <span
+                    class="iconify"
+                    data-icon="mdi-star"
+                    data-inline="false"
+                    style="width: 14px; height: 21px; color: #fbb13c"
+                  ></span>
+                  <span
+                    class="iconify"
+                    data-icon="mdi-star"
+                    data-inline="false"
+                    style="width: 14px; height: 21px; color: #fbb13c"
+                  ></span>
+                  <span
+                    class="iconify"
+                    data-icon="mdi-star"
+                    data-inline="false"
+                    style="width: 14px; height: 21px; color: #fbb13c"
+                  ></span>
+                  <span
+                    class="iconify"
+                    data-icon="mdi-star"
+                    data-inline="false"
+                    style="width: 14px; height: 21px; color: #fbb13c"
+                  ></span>
+                  <span
+                    class="iconify"
+                    data-icon="mdi-star"
+                    data-inline="false"
+                    style="width: 14px; height: 21px; color: #a0a9b1"
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column"></div>
+          </div>
+          <div
+            style="
+              display: flex;
+              padding: 1.5rem;
+              background-color: white;
+              border: none;
+              box-shadow: 0 8px 35px 0 rgb(73 80 87 / 5%);
+              border-radius: 7px;
+              margin-bottom: 30px;
+            "
+          >
+            <div style="display: flex; flex-direction: column">
+              <p
+                style="
+                  margin-bottom: 1.5rem;
+                  line-height: 1.8;
+                  font-size: 15px;
+                  color: #a0a9b1;
+                "
+              >
+                To achieve this, it would be necessary to have uniform grammar,
+                pronunciation and more common words. If several languages of the
+                resulting language
+              </p>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: flex-end;
+                "
+              >
+                <div style="display: flex">
+                  <div
+                    style="
+                      background-color: rgba(47, 85, 212, 0.1);
+                      height: 3.5rem;
+                      width: 3.5rem;
+                      border-radius: 50%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      color: #2f55d4;
+                      font-weight: 700;
+                      margin-right: 16px;
+                    "
+                  >
+                    T
+                  </div>
+                  <div style="display: flex; flex-direction: column">
+                    <p
+                      style="
+                        font-size: 16px;
+                        color: #343a40;
+                        font-weight: 700;
+                        margin-bottom: 0.5rem;
+                      "
+                    >
+                      Timothy Fairley
+                    </p>
+                    <p style="font-size: 0.9rem; color: #a0a9b1">
+                      - Invoza User
+                    </p>
+                  </div>
+                </div>
+                <div style="display: flex">
+                  <span
+                    class="iconify"
+                    data-icon="mdi-star"
+                    data-inline="false"
+                    style="width: 14px; height: 21px; color: #fbb13c"
+                  ></span>
+                  <span
+                    class="iconify"
+                    data-icon="mdi-star"
+                    data-inline="false"
+                    style="width: 14px; height: 21px; color: #fbb13c"
+                  ></span>
+                  <span
+                    class="iconify"
+                    data-icon="mdi-star"
+                    data-inline="false"
+                    style="width: 14px; height: 21px; color: #fbb13c"
+                  ></span>
+                  <span
+                    class="iconify"
+                    data-icon="mdi-star"
+                    data-inline="false"
+                    style="width: 14px; height: 21px; color: #fbb13c"
+                  ></span>
+                  <span
+                    class="iconify"
+                    data-icon="mdi-star"
+                    data-inline="false"
+                    style="width: 14px; height: 21px; color: #a0a9b1"
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column"></div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div
+          style="
+            display: flex;
+            margin-top: 50px;
+            width: 100%;
+            justify-content: space-between;
+          "
+        >
+          <img id="logo" width="100" src="images/logo-1.png" class="logo" />
+          <img id="logo" width="100" src="images/logo-2.png" class="logo" />
+          <img id="logo" width="100" src="images/logo-3.png" class="logo" />
+          <img id="logo" width="100" src="images/logo-4.png" class="logo" />
+        </div>
       </div>
+    </div>
+    <div style="background-color: #2f55d4">
+      <div
+        id="statistics"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 50px;
+          width: 70%;
+          margin: 0 auto;
+          padding: 80px 0;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 58%;
+            text-align: center;
+            margin-bottom: 3rem;
+          "
+        >
+          <p
+            style="
+              color: #fff !important;
+              font-weight: 700;
+              margin-bottom: 0.5rem;
+              font-size: 1.5rem;
+            "
+          >
+            Best Solutions for your Business
+          </p>
+          <p
+            style="
+              line-height: 1.8;
+              font-size: 15px;
+              margin-bottom: 1rem;
+              color: hsla(0, 0%, 100%, 0.5);
+            "
+          >
+            To achieve this, it would be necessary to have uniform grammar,
+            pronunciation and more common that of the individual languages.
+          </p>
+        </div>
+        <div style="display: flex; width: 100%; justify-content: space-between">
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <i
+              data-feather="bookmark"
+              class="icon"
+              style="
+                color: #34d1bf;
+                fill: rgba(52, 209, 191, 0.2);
+                width: 40px;
+                height: 40px;
+              "
+            ></i>
+            <p
+              style="
+                color: white;
+                font-weight: 700;
+                font-size: 2rem;
+                margin-top: 1.5rem;
+                margin-bottom: 0.5rem;
+              "
+            >
+              2581
+            </p>
+            <p
+              style="
+                color: hsla(0, 0%, 100%, 0.5) !important;
+                font-size: 16px;
+                margin-bottom: 1rem;
+              "
+            >
+              Projects
+            </p>
+          </div>
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <i
+              data-feather="user-plus"
+              class="icon"
+              style="
+                color: #34d1bf;
+                fill: rgba(52, 209, 191, 0.2);
+                width: 40px;
+                height: 40px;
+              "
+            ></i>
+            <p
+              style="
+                color: white;
+                font-weight: 700;
+                font-size: 2rem;
+                margin-top: 1.5rem;
+                margin-bottom: 0.5rem;
+              "
+            >
+              800
+            </p>
+            <p
+              style="
+                color: hsla(0, 0%, 100%, 0.5) !important;
+                font-size: 16px;
+                margin-bottom: 1rem;
+              "
+            >
+              No. of Clients
+            </p>
+          </div>
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <i
+              data-feather="coffee"
+              class="icon"
+              style="
+                color: #34d1bf;
+                fill: rgba(52, 209, 191, 0.2);
+                width: 40px;
+                height: 40px;
+              "
+            ></i>
+            <p
+              style="
+                color: white;
+                font-weight: 700;
+                font-size: 2rem;
+                margin-top: 1.5rem;
+                margin-bottom: 0.5rem;
+              "
+            >
+              128
+            </p>
+            <p
+              style="
+                color: hsla(0, 0%, 100%, 0.5) !important;
+                font-size: 16px;
+                margin-bottom: 1rem;
+              "
+            >
+              Cups of coffee
+            </p>
+          </div>
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <i
+              data-feather="award"
+              class="icon"
+              style="
+                color: #34d1bf;
+                fill: rgba(52, 209, 191, 0.2);
+                width: 40px;
+                height: 40px;
+              "
+            ></i>
+            <p
+              style="
+                color: white;
+                font-weight: 700;
+                font-size: 2rem;
+                margin-top: 1.5rem;
+                margin-bottom: 0.5rem;
+              "
+            >
+              47
+            </p>
+            <p
+              style="
+                color: hsla(0, 0%, 100%, 0.5) !important;
+                font-size: 16px;
+                margin-bottom: 1rem;
+              "
+            >
+              Awards
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-color: #f8fafe">
       <div
         style="
           display: flex;
-          justify-content: space-between;
-          width: 100%;
-          background-color: chocolate;
+          flex-direction: column;
+          align-items: center;
+          padding: 80px 0;
+          width: 70%;
+          margin: 0 auto;
         "
       >
-        <div style="display: flex">
-          <img
-            id="logo"
-            width="30"
-            src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-          />
-          <p>3,500 + Satisfied Client</p>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 3rem;
+          "
+        >
+          <p
+            style="
+              color: #2f55d4;
+              letter-spacing: 1px;
+              font-size: 14px;
+              font-weight: 700;
+              margin-bottom: 0.5rem;
+            "
+          >
+            PRICING
+          </p>
+          <p
+            style="
+              margin-bottom: 1rem;
+              color: #343a40;
+              font-weight: 700;
+              font-size: 1.5rem;
+            "
+          >
+            Choose your Plan
+          </p>
+          <p style="line-height: 1.8; font-size: 15px; color: #a0a9b1">
+            It will be as simple as occidental in fact, it will be Occidental.
+          </p>
         </div>
-        <div style="display: flex">
-          <img
-            id="logo"
-            width="30"
-            src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-            style="margin-right: 15px"
-          />
-          <img
-            id="logo"
-            width="30"
-            src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-          />
+        <div
+          style="
+            background-color: #fff;
+            box-shadow: 0 8px 35px 0 rgb(73 80 87 / 5%);
+            padding: 5px;
+            border-radius: 7px;
+            margin-bottom: 1.5rem;
+          "
+        >
+          <button
+            style="
+              background-color: #2f55d4;
+              color: #fff;
+              border-radius: 7px;
+              padding: 0.6rem 1.4rem;
+              cursor: pointer;
+            "
+          >
+            Monthly
+          </button>
+          <button
+            style="
+              background-color: transparent;
+              color: #a0a9b1;
+              border-radius: 7px;
+              padding: 0.6rem 1.4rem;
+              cursor: pointer;
+            "
+          >
+            Yearly
+          </button>
         </div>
-      </div>
-      <div style="display: flex">
-        <div style="display: flex">
-          <div style="display: flex; flex-direction: column">
-            <p>
-              To achieve this, it would be necessary to have uniform grammar,
-              pronunciation and more common words. If several languages of the
-              resulting language
-            </p>
-            <div
+        <div
+          style="
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 30px;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 30%;
+              border: none;
+              box-shadow: 0 8px 35px 0 rgb(73 80 87 / 5%);
+              border-radius: 7px;
+              background-color: white;
+              padding: 1.5rem;
+              margin-right: 15px;
+            "
+          >
+            <p
               style="
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
+                margin-bottom: 3rem;
+                margin-top: 0.5rem;
+                font-weight: 700;
+                color: #343a40;
+                font-size: 1.25rem;
               "
             >
-              <div style="display: flex">
-                <img
-                  id="logo"
-                  width="50"
-                  src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-                />
-                <div style="display: flex; flex-direction: column">
-                  <p>Timothy Fairley</p>
-                  <p>- Invoza User</p>
-                </div>
-              </div>
-              <div style="display: flex">
-                <img
-                  id="logo"
-                  width="10"
-                  height="10"
-                  src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-                  style="margin-right: 5px"
-                />
-                <img
-                  id="logo"
-                  width="10"
-                  height="10"
-                  src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-                  style="margin-right: 5px"
-                />
-                <img
-                  id="logo"
-                  width="10"
-                  height="10"
-                  src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-                  style="margin-right: 5px"
-                />
-                <img
-                  id="logo"
-                  width="10"
-                  height="10"
-                  src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-                  style="margin-right: 5px"
-                />
-                <img
-                  id="logo"
-                  width="10"
-                  height="10"
-                  src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-                  style="margin-right: 5px"
-                />
-              </div>
-            </div>
-          </div>
-          <div style="display: flex; flex-direction: column"></div>
-        </div>
-        <div style="display: flex">
-          <div style="display: flex; flex-direction: column">
-            <p>
-              To achieve this, it would be necessary to have uniform grammar,
-              pronunciation and more common words. If several languages of the
-              resulting language
+              Economy
             </p>
-            <div
+            <p
               style="
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
+                color: #343a40;
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 3rem;
               "
             >
-              <div style="display: flex">
-                <img
-                  id="logo"
-                  width="50"
-                  src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-                />
-                <div style="display: flex; flex-direction: column">
-                  <p>Timothy Fairley</p>
-                  <p>- Invoza User</p>
-                </div>
-              </div>
-              <div style="display: flex">
-                <img
-                  id="logo"
-                  width="10"
-                  height="10"
-                  src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-                  style="margin-right: 5px"
-                />
-                <img
-                  id="logo"
-                  width="10"
-                  height="10"
-                  src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-                  style="margin-right: 5px"
-                />
-                <img
-                  id="logo"
-                  width="10"
-                  height="10"
-                  src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-                  style="margin-right: 5px"
-                />
-                <img
-                  id="logo"
-                  width="10"
-                  height="10"
-                  src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-                  style="margin-right: 5px"
-                />
-                <img
-                  id="logo"
-                  width="10"
-                  height="10"
-                  src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-                  style="margin-right: 5px"
-                />
-              </div>
+              <span
+                style="
+                  top: -0.5em;
+                  position: relative;
+                  font-size: 75%;
+                  line-height: 0;
+                  vertical-align: baseline;
+                "
+              >
+                <span style="font-size: 80%; font-weight: 400">$</span> </span
+              >19/
+              <span style="font-size: 16px; font-weight: 500">Mo</span>
+            </p>
+            <button class="round-button">Join Now</button>
+            <div
+              style="
+                margin-top: 3rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              "
+            >
+              <p
+                style="
+                  line-height: 1.8;
+                  font-size: 15px;
+                  margin-bottom: 1rem;
+                  color: #a0a9b1;
+                "
+              >
+                Bandwidth : <span style="color: #34d1bf">1GB</span>
+              </p>
+              <p
+                style="
+                  line-height: 1.8;
+                  font-size: 15px;
+                  margin-bottom: 1rem;
+                  color: #a0a9b1;
+                "
+              >
+                Onlinespace : <span style="color: #34d1bf">50MB</span>
+              </p>
+              <p
+                style="
+                  line-height: 1.8;
+                  font-size: 15px;
+                  margin-bottom: 1rem;
+                  color: #a0a9b1;
+                "
+              >
+                Support : <span style="color: #34d1bf">No</span>
+              </p>
             </div>
           </div>
-          <div style="display: flex; flex-direction: column"></div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 30%;
+              border: none;
+              box-shadow: 0 8px 35px 0 rgb(73 80 87 / 5%);
+              border-radius: 7px;
+              background-color: white;
+              padding: 1.5rem;
+              margin: 0 15px;
+            "
+          >
+            <p
+              style="
+                margin-bottom: 3rem;
+                margin-top: 0.5rem;
+                font-weight: 700;
+                color: #343a40;
+                font-size: 1.25rem;
+              "
+            >
+              Economy
+            </p>
+            <p
+              style="
+                color: #343a40;
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 3rem;
+              "
+            >
+              <span
+                style="
+                  top: -0.5em;
+                  position: relative;
+                  font-size: 75%;
+                  line-height: 0;
+                  vertical-align: baseline;
+                "
+              >
+                <span style="font-size: 80%; font-weight: 400">$</span> </span
+              >19/
+              <span style="font-size: 16px; font-weight: 500">Mo</span>
+            </p>
+            <button class="round-button">Join Now</button>
+            <div
+              style="
+                margin-top: 3rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              "
+            >
+              <p
+                style="
+                  line-height: 1.8;
+                  font-size: 15px;
+                  margin-bottom: 1rem;
+                  color: #a0a9b1;
+                "
+              >
+                Bandwidth : <span style="color: #34d1bf">1GB</span>
+              </p>
+              <p
+                style="
+                  line-height: 1.8;
+                  font-size: 15px;
+                  margin-bottom: 1rem;
+                  color: #a0a9b1;
+                "
+              >
+                Onlinespace : <span style="color: #34d1bf">50MB</span>
+              </p>
+              <p
+                style="
+                  line-height: 1.8;
+                  font-size: 15px;
+                  margin-bottom: 1rem;
+                  color: #a0a9b1;
+                "
+              >
+                Support : <span style="color: #34d1bf">No</span>
+              </p>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 30%;
+              border: none;
+              box-shadow: 0 8px 35px 0 rgb(73 80 87 / 5%);
+              border-radius: 7px;
+              background-color: white;
+              padding: 1.5rem;
+              margin-left: 15px;
+            "
+          >
+            <p
+              style="
+                margin-bottom: 3rem;
+                margin-top: 0.5rem;
+                font-weight: 700;
+                color: #343a40;
+                font-size: 1.25rem;
+              "
+            >
+              Economy
+            </p>
+            <p
+              style="
+                color: #343a40;
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 3rem;
+              "
+            >
+              <span
+                style="
+                  top: -0.5em;
+                  position: relative;
+                  font-size: 75%;
+                  line-height: 0;
+                  vertical-align: baseline;
+                "
+              >
+                <span style="font-size: 80%; font-weight: 400">$</span> </span
+              >19/
+              <span style="font-size: 16px; font-weight: 500">Mo</span>
+            </p>
+            <button class="round-button">Join Now</button>
+            <div
+              style="
+                margin-top: 3rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              "
+            >
+              <p
+                style="
+                  line-height: 1.8;
+                  font-size: 15px;
+                  margin-bottom: 1rem;
+                  color: #a0a9b1;
+                "
+              >
+                Bandwidth : <span style="color: #34d1bf">1GB</span>
+              </p>
+              <p
+                style="
+                  line-height: 1.8;
+                  font-size: 15px;
+                  margin-bottom: 1rem;
+                  color: #a0a9b1;
+                "
+              >
+                Onlinespace : <span style="color: #34d1bf">50MB</span>
+              </p>
+              <p
+                style="
+                  line-height: 1.8;
+                  font-size: 15px;
+                  margin-bottom: 1rem;
+                  color: #a0a9b1;
+                "
+              >
+                Support : <span style="color: #34d1bf">No</span>
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div
-        style="
-          display: flex;
-          margin-top: 50px;
-          width: 100%;
-          justify-content: space-between;
-        "
-      >
-        <img
-          id="logo"
-          width="100"
-          src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-        />
-        <img
-          id="logo"
-          width="100"
-          src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-        />
-        <img
-          id="logo"
-          width="100"
-          src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-        />
-        <img
-          id="logo"
-          width="100"
-          src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-        />
       </div>
     </div>
     <div
-      id="statistics"
       style="
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 50px;
+        padding: 80px 0;
       "
     >
       <div
@@ -1014,191 +1715,218 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          width: 60%;
-          text-align: center;
+          margin-bottom: 3rem;
         "
       >
-        <p>Best Solutions for your Business</p>
-        <p>
-          To achieve this, it would be necessary to have uniform grammar,
-          pronunciation and more common that of the individual languages.
+        <p
+          style="
+            color: #2f55d4;
+            letter-spacing: 1px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+          "
+        >
+          SUBSCRIBE
         </p>
-      </div>
-      <div style="display: flex; width: 100%; justify-content: space-between">
-        <div style="display: flex; flex-direction: column; align-items: center">
-          <img
-            src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-            width="40"
-          />
-          <p>2581</p>
-          <p>Projects</p>
-        </div>
-        <div style="display: flex; flex-direction: column; align-items: center">
-          <img
-            src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-            width="40"
-          />
-          <p>2581</p>
-          <p>Projects</p>
-        </div>
-        <div style="display: flex; flex-direction: column; align-items: center">
-          <img
-            src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-            width="40"
-          />
-          <p>2581</p>
-          <p>Projects</p>
-        </div>
-        <div style="display: flex; flex-direction: column; align-items: center">
-          <img
-            src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
-            width="40"
-          />
-          <p>2581</p>
-          <p>Projects</p>
-        </div>
-      </div>
-    </div>
-    <div
-      style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: coral;
-        padding: 30px;
-      "
-    >
-      <div style="display: flex; flex-direction: column; align-items: center">
-        <p>PRICING</p>
-        <p>Choose your Plan</p>
-        <p>
-          It will be as simple as occidental in fact, it will be Occidental.
+        <p
+          style="
+            margin-bottom: 1rem;
+            color: #343a40;
+            font-weight: 700;
+            font-size: 1.5rem;
+          "
+        >
+          Subscribe to our Newsletter
         </p>
-      </div>
-      <div>
-        <button>Monthly</button>
-        <button>Yearly</button>
-      </div>
-      <div
-        style="
-          display: flex;
-          width: 100%;
-          justify-content: space-around;
-          margin-top: 30px;
-        "
-      >
-        <div
+        <p
           style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: cornflowerblue;
-            width: 30%;
-            box-shadow: rgba(73, 80, 87, 0.5) 0px 8px 35px 0px;
+            line-height: 1.8;
+            font-size: 15px;
+            margin-bottom: 1rem;
+            color: #a0a9b1;
           "
         >
-          <p>Economy</p>
-          <p style="color: black; font-size: 2.5rem; font-weight: 500">
-            $19/ <span style="font-size: 16px">Mo</span>
-          </p>
-          <button>Join Now</button>
-          <p>Bandwidth : 1GB</p>
-          <p>Onlinespace : 50MB</p>
-          <p>Support : No</p>
-        </div>
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: cornflowerblue;
-            width: 30%;
-            box-shadow: rgba(73, 80, 87, 0.5) 0px 8px 35px 0px;
-          "
-        >
-          <p>Economy</p>
-          <p>$19/ Mo</p>
-          <button>Join Now</button>
-          <p>Bandwidth : 1GB</p>
-          <p>Onlinespace : 50MB</p>
-          <p>Support : No</p>
-        </div>
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: cornflowerblue;
-            width: 30%;
-            box-shadow: rgba(73, 80, 87, 0.5) 0px 8px 35px 0px;
-          "
-        >
-          <p>Economy</p>
-          <p>$19/ Mo</p>
-          <button>Join Now</button>
-          <p>Bandwidth : 1GB</p>
-          <p>Onlinespace : 50MB</p>
-          <p>Support : No</p>
-        </div>
-      </div>
-    </div>
-    <div
-      style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: cyan;
-        padding: 30px;
-      "
-    >
-      <div style="display: flex; flex-direction: column; align-items: center">
-        <p>SUBSCRIBE</p>
-        <p>Subscribe to our Newsletter</p>
-        <p>
           It will be as simple as occidental in fact, it will be Occidental.
         </p>
       </div>
       <div style="display: flex; width: 100%; justify-content: center">
-        <input type="text" style="width: 60%; margin-right: 10px" />
-        <button>Subscribe Us</button>
+        <input
+          type="text"
+          placeholder="Enter your E-mail address"
+          style="
+            width: 60%;
+            margin-right: 10px;
+            height: 46px;
+            border-radius: 7px;
+            font-size: 15px;
+            box-shadow: none;
+            color: #495057;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            padding: 0.375rem 0.75rem;
+          "
+        />
+        <button class="round-button">Subscribe Us</button>
       </div>
     </div>
-    <div
-      style="
-        display: flex;
-        justify-content: space-between;
-        background-color: darkgray;
-        padding: 40px;
-      "
-    >
-      <div style="display: flex; flex-direction: column; width: 40%">
-        <p>About the Invoza</p>
-        <p>
-          The Invoza is a sed ut perspiciatis unde omnis iste natus error sit
-          voluptatem accusantium doloremque rem eaque
-        </p>
-      </div>
-      <div style="display: flex; flex-direction: column">
-        <p>Company</p>
-        <p>About Us</p>
-        <p>Media & Press</p>
-        <p>Career</p>
-        <p>Blog</p>
-      </div>
-      <div style="display: flex; flex-direction: column">
-        <p>More Info</p>
-        <p>Pricing</p>
-        <p>For Marketing</p>
-        <p>For CEOs</p>
-        <p>For Agencies</p>
-        <p>Our Apps</p>
-      </div>
-      <div style="display: flex; flex-direction: column">
-        <p>476 University Drive Ridge, IL 61257</p>
-        <p>exampleabc@armyspy.com</p>
-        <p>0123-456-789</p>
+    <div style="background-color: #0f1b42">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          padding: 80px 0 40px;
+          color: hsla(0, 0%, 100%, 0.5);
+          width: 70%;
+          margin: 0 auto;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin: 0 15px;
+          "
+        >
+          <p
+            style="
+              font-size: 16px;
+              color: #fff;
+              margin-bottom: 1.5rem;
+              font-weight: 700;
+            "
+          >
+            About the Invoza
+          </p>
+          <p style="line-height: 1.8; font-size: 15px; margin-bottom: 1rem">
+            The Invoza is a sed ut perspiciatis unde omnis iste natus error sit
+            voluptatem accusantium doloremque rem eaque
+          </p>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            margin: 0 15px;
+            margin-left: 9%;
+          "
+        >
+          <p
+            style="
+              font-size: 16px;
+              color: #fff;
+              margin-bottom: 1.5rem;
+              font-weight: 700;
+            "
+          >
+            Company
+          </p>
+          <div style="font-size: 15px; transition: all 0.4s">
+            <p style="margin-bottom: 14px">About Us</p>
+            <p style="margin-bottom: 14px">Media & Press</p>
+            <p style="margin-bottom: 14px">Career</p>
+            <p style="margin-bottom: 14px">Blog</p>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; margin: 0 15px">
+          <p
+            style="
+              font-size: 16px;
+              color: #fff;
+              margin-bottom: 1.5rem;
+              font-weight: 700;
+            "
+          >
+            More Info
+          </p>
+          <div style="font-size: 15px; transition: all 0.4s">
+            <p style="margin-bottom: 14px">Pricing</p>
+            <p style="margin-bottom: 14px">For Marketing</p>
+            <p style="margin-bottom: 14px">For CEOs</p>
+            <p style="margin-bottom: 14px">For Agencies</p>
+            <p style="margin-bottom: 14px">Our Apps</p>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; margin: 0 15px">
+          <p
+            style="
+              font-size: 16px;
+              color: #fff;
+              margin-bottom: 1.5rem;
+              font-weight: 700;
+            "
+          >
+            Contact
+          </p>
+          <div style="margin-bottom: 14px; display: flex">
+            <i
+              data-feather="map-pin"
+              class="icon"
+              style="
+                height: 16px;
+                width: 16px;
+                color: #f8fafe;
+                fill: rgba(248, 250, 254, 0.2);
+                margin-top: 0.25rem;
+                margin-right: 0.5rem;
+              "
+            ></i>
+            <p>476 University Drive Ridge, IL 61257</p>
+          </div>
+          <div style="margin-bottom: 14px; display: flex">
+            <i
+              data-feather="mail"
+              class="icon"
+              style="
+                height: 16px;
+                width: 16px;
+                color: #f8fafe;
+                fill: rgba(248, 250, 254, 0.2);
+                margin-top: 0.25rem;
+                margin-right: 0.5rem;
+              "
+            ></i>
+            <p>exampleabc@armyspy.com</p>
+          </div>
+          <div style="margin-bottom: 14px; display: flex">
+            <i
+              data-feather="phone"
+              class="icon"
+              style="
+                height: 16px;
+                width: 16px;
+                color: #f8fafe;
+                fill: rgba(248, 250, 254, 0.2);
+                margin-top: 0.25rem;
+                margin-right: 0.5rem;
+              "
+            ></i>
+            <p>0123-456-789</p>
+          </div>
+        </div>
       </div>
     </div>
+    <div style="background-color: #2f55d4">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          width: 70%;
+          margin: 0 auto;
+          padding: 1rem 0;
+        "
+      >
+        <img
+          id="logo"
+          height="20"
+          src="images/logo-light.png"
+          style="cursor: pointer"
+        />
+        <p style="color: white">2021 © Invoza. Created by Themesdesign</p>
+      </div>
+    </div>
+
     <script>
       feather.replace();
     </script>
