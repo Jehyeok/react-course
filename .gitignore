@@ -1,0 +1,7 @@
+.next
+node_modules
+__generated__
+.idea
+yarn-error.log
+*.graphql.d.ts
+*.graphqls.d.ts
